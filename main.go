@@ -39,9 +39,9 @@ func main() {
 
 	// Get current IST time
 	loc, _ := time.LoadLocation("Asia/Kolkata")
-	now1 := time.Now().In(loc)
-	// now := time.Now().In(loc)
-	now := now1.Add(24 * time.Hour)
+	// now1 := time.Now().In(loc)
+	now := time.Now().In(loc)
+	// now := now1.Add(24 * time.Hour)
 
 	day := now.Weekday().String()[:3] // Mon, Tue, ...
 	var session string
